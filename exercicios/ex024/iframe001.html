@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 500px;
+            height: 500px;
+            border: 1px dashed lightblue;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
         Acessando o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="auto">
+
+            <a href="https://www.cursoemvideo.com" target="_blank"> CursoemVideo</a>
+        </iframe>
         
         
         para aprender a programar
@@ -18,7 +28,9 @@
 
     <p>O repositório do Luiz Felipe
 
-        <iframe src="https://luizdevfelipe.github.io/html-css/exercicios/ex024/iframe001.html" frameborder="0"></iframe>
+        <iframe src="https://luizdevfelipe.github.io/html-css/exercicios/ex024/iframe001.html" frameborder="0" width="800px" height="500px">
+            no <a href="https://luizdevfelipe.github.io/html-css/exercicios/ex024/iframe001.html" target="_blank">Github</a>
+        </iframe>
 
         também é bem legal
     </p>
