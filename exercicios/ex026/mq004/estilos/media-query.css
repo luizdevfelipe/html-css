@@ -1,3 +1,78 @@
 @charset "UTF-8";
 
 /* todas as outras mídias */
+
+/* Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celular: de 600px até 768px 
+Tablet: de 769px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+/* Impressora */
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;        
+    }
+
+    main{
+        border: 2px solid black;
+        width: 100vw;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;       
+    }
+
+    main::after{
+        content: 'Impressão feita utilizando Media Queries';
+        font-size: 0.8em;
+        text-align: center;
+        text-decoration: overline;
+    }
+
+    img#ico-cel{ display: none; }
+    img#ico-tab{ display: none; }
+    img#ico-print{ display: block; }
+    img#ico-pc{ display: none; }
+    img#ico-tv{ display: none; }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 992px){      
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#ico-cel{ display: none; }
+    img#ico-tab{ display: block; }
+    img#ico-print{ display: none; }
+    img#ico-pc{ display: none; }
+    img#ico-tv{ display: none; }
+}
+
+/* PC */ 
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#ico-cel{ display: none; }
+    img#ico-tab{ display: none; }
+    img#ico-print{ display: none; }
+    img#ico-pc{ display: block; }
+    img#ico-tv{ display: none; }
+}
+
+/* Telas Grandes */
+@media screen and (min-width: 1201px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#ico-cel{ display: none; }
+    img#ico-tab{ display: none; }
+    img#ico-print{ display: none; }
+    img#ico-pc{ display: none; }
+    img#ico-tv{ display: block; }
+}
+
