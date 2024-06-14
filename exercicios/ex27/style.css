@@ -50,20 +50,18 @@ li{
     height: 70px;
     background-color: white;
     border-radius: 50%;
+   box-shadow: inset 0px 0px 10px 1px rgb(46, 40, 40);
 }
 
 li:nth-child(1){
-    background-color: rgb(68, 46, 46);
-    box-shadow: inset 0px 0px 10px 1px rgb(46, 40, 40);
+    background-color: rgb(68, 46, 46);   
 }
 
 li:nth-child(2){
     background-color: rgb(68, 61, 44);
     animation: LuzPiscando 4s 0s infinite;
-    box-shadow: inset 0px 0px 10px 1px rgb(46, 40, 40);
 }
 
 li:nth-child(3){
     background-color: rgb(42, 58, 42);
-    box-shadow: inset 0px 0px 10px 1px rgb(46, 40, 40);
 }
