@@ -4,5 +4,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #444444;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-size: 25px;
+    }
+}
+
+nav menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
