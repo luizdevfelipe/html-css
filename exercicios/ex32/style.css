@@ -32,3 +32,9 @@ a {
     text-decoration: none;
 }
 
+.news-wrapper {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    justify-items: center;
+}
+
