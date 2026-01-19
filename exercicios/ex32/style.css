@@ -38,3 +38,16 @@ a {
     justify-items: center;
 }
 
+.products-wrapper {
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    margin-top: 60px;
+}
+
+.ad {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    /* margin: auto;  mesmo que justify-self e align-self em center */
+}
